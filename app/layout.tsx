@@ -1,17 +1,18 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import {Bellefair, Barlow} from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header/header";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+const bellefair = Bellefair({
+  variable: "--font-bellefair",
+  weight: "400",
+  subsets: ['latin']
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+
+const barlow = Barlow({
+  variable: "--font-barlow",
+  weight: "400",
+  subsets: ['latin']
 });
 
 export const metadata: Metadata = {
@@ -35,13 +36,15 @@ export default function RootLayout({
         />
          <link
          rel="icon"
-         href="./favicon.png"
+         href="../app/favicon.png"
          type="image/<generated>"
          sizes="<generated>"
          />
+        <meta name="theme-color" content="#fffeea"/>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${bellefair.className} ${barlow.className}  antialiased`}
       >
+        <Header />
         {children}
       </body>
     </html>
