@@ -24,4 +24,26 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+  .btn-circle{
+    background-color: rgb(255 255 255 / 10%);
+    margin-top: 81px;
+    overflow: hidden;
+    color: #93c5fd; 
+  
+    width: 232px;
+    height: 232px;
+    border-radius: 50%;
+    position: relative;
+  }
+  .btn-hover {
+    background-color: transparent;
+    margin-top: 81px;
+    overflow: hidden;
+    color: #0B0D17;
+  
+    width: 232px;
+    height: 232px;
+    border-radius: 50%;
+    position: relative;
+  }
 }

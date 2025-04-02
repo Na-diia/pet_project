@@ -21,7 +21,7 @@ export default function MobHeader () {
         <Image src={burgerIcon} alt='Burger icon' width={24} height={21}/>
         </button>
         </div>
-      {menuIsOpen ? <div className='backdrop-blur-lg absolute top-0 w-64 left-32 h-screen transition-all v overflow-y-auto visible '>
+      {menuIsOpen ? <div className='z-10 backdrop-blur-lg absolute top-0 w-64 right-0 h-screen transition-all v overflow-y-auto visible '>
         <div className=''>
          <div className='flex justify-end'>
         <button type='button' onClick={toggleMenu} className='mr-8 mb-8 mt-8'>

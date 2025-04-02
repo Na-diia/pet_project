@@ -26,7 +26,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-         <meta charSet="UTF-8"></meta>
         <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="mobile-web-app-capable" content="yes"></meta>
@@ -36,9 +35,9 @@ export default function RootLayout({
         />
          <link
          rel="icon"
-         href="../app/favicon.png"
-         type="image/<generated>"
-         sizes="<generated>"
+         href="../app/icon.png"
+         type="image/png"
+         sizes="32x32"
          />
         <meta name="theme-color" content="#fffeea"/>
       <body
