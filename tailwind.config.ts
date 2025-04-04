@@ -12,6 +12,9 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      screens: {
+        'custom-height-mq': { 'raw': '((min-width: 375px) and (max-height: 767px))' },
+      }
     },
   },
   plugins: [],

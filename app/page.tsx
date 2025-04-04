@@ -2,7 +2,8 @@ import Button from "@/components/button/button";
 
 export default function Home() {
   return (
-    <main className=" bg-[url(../public/images/home/background-home-mobile.jpg)]  bg-cover bg-no-repeat items-center justify-items-center min-h-screen w-full p-6">
+    <main className=" bg-[url(../public/images/home/background-home-mobile.jpg)]
+    md:bg-[url(../public/images/home/background-home-tablet.jpg)]  bg-cover bg-no-repeat items-center justify-items-center min-h-screen w-full p-6">
    <div className=" mt-20 flex flex-col justify-center items-center">
     <p className="text-white">SO, YOU WANT TO TRAVEL TO</p>
    <h1 className="text-8xl  text-white mt-6">SPACE</h1>
