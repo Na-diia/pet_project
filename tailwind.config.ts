@@ -13,7 +13,7 @@ const config: Config = {
         foreground: "var(--foreground)",
       },
       screens: {
-        'custom-height-mq': { 'raw': '((min-width: 375px) and (max-height: 767px))' },
+        'custom-width-mq': { 'raw': '((min-width: 1440px) and (max-width: 4440))' },
       }
     },
   },

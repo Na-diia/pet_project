@@ -8,7 +8,7 @@ export function Navigation () {
 
     return (
         <nav className="">
-           <ul className='ml-8 mt-4 flex flex-col gap-8 md:justify-center md:items-center md:h-full md:flex-row md:gap-12 md:ml-0 md:mt-0'>
+           <ul className='ml-8 mt-4 flex flex-col gap-8 md:justify-center xl:justify-end md:items-center md:h-full md:flex-row md:gap-12 md:ml-0 md:mt-0'>
                 <li className='text-white mr-3 md:mr-0 font-bold md:relative'>00
                     <Link href='/' className='ml-3 font-thin'>HOME</Link>
                     {pathname === '/'  ? 

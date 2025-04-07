@@ -46,4 +46,14 @@ body {
     border-radius: 50%;
     position: relative;
   }
+  @media screen and (min-width: 768px) {
+    .btn-hover, .btn-circle {
+      position: absolute;
+      top: 44%;
+      margin-top: 0px;
+    
+      width: 400px;
+      height: 400px;
+    }
+  }
 }

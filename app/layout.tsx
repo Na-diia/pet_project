@@ -26,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-        <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="mobile-web-app-capable" content="yes"></meta>
         <meta
@@ -41,7 +41,7 @@ export default function RootLayout({
          />
         <meta name="theme-color" content="#fffeea"/>
       <body
-        className={`${bellefair.className} ${barlow.className}  antialiased`}
+        className={`${bellefair.className}   antialiased`}
       >
         <Header />
         {children}
