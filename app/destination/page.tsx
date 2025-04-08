@@ -1,12 +1,12 @@
+import { redirect } from "next/navigation"
 
 
+export default function DestinationRedirect () {
 
-export default function DestinationPage () {
+    redirect('/destination/moon');
+    
     return (
-        <div className="
-        bg-[url(../public/images/home/background-home-mobile.jpg)]  bg-cover bg-no-repeat items-center justify-items-center min-h-screen w-full p-8">
-        <p className="mt-24"> Avg. distance: </p>
-        <p>  Est. travel time: </p>
-        </div>
+        <main >
+        </main>
     )
 }
