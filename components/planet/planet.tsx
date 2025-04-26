@@ -1,25 +1,56 @@
 'use client';
 import Image from "next/image";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
-
+import useWindowSize from "@/lib/useWindowSize";
 import { PlanetProps } from "@/lib/types";
-
 
 export default function Planet ({props}: PlanetProps) {
 
-    const findImage = (path: string) => {
-      
-        const image = `/public/images/destination/image-${path}.png`;
-        return image;
-    };
+    const pathname = usePathname();
+    const windowSize = useWindowSize();
 
     return (
         <div className="mt-6">
        {props.map((item, index) => {
-        const img = findImage(item.name.toLocaleLowerCase());
         return (
-        <div key={index}>    
-       <Image src={img} alt="Planet photo" width={150} height={150}/>
+        <div key={index}>
+        <div className="mt-[50.5px] mb-[58.5px] flex justify-center items-center">    
+       <Image src={item.images.png} alt={item.name} width={150} height={150}/>
+       </div>
+       <ul className="flex gap-4 items-center justify-center text-[16px] text-[#D0D6F9] ">
+        <li className="relative"><Link href='/destination' className="hover:text-white active:text-white">MOON</Link>
+        {pathname.includes('moon')  ? 
+                <span className='absolute top-[15px] left-0 font-bold'>
+                    {windowSize.width < 768 ? "_______" : "_________"}</span>
+                    : <></>
+        }
+        </li>
+        <li className="relative"><Link href='/destination/mars' className="hover:text-white active:text-white">MARS</Link>
+        {pathname.includes('mars')  ? 
+                <span className='absolute top-[15px] left-0 font-bold'>
+                    {windowSize.width < 768 ? "______" : "_________"}</span>
+                    : <></>
+        }
+        </li>
+        <li className="relative"><Link href='/destination/europa' className="hover:text-white active:text-white">EUROPA</Link>
+        {pathname.includes('europa')  ? 
+                <span className='absolute top-[15px] left-0 font-bold'>
+                    {windowSize.width < 768 ? "________" : "_________"}</span>
+                    : <></>
+        }
+        </li>
+        <li className="relative"><Link href='/destination/titan' className="hover:text-white active:text-white">TITAN</Link>
+        {pathname.includes('titan')  ? 
+                <span className='absolute top-[15px] left-0 font-bold'>
+                    {windowSize.width < 768 ? "______" : "_________"}</span>
+                    : <></>
+        }
+        </li>
+       </ul>
+       <h1 className="mt-8 flex justify-center items-center text-[56px] mb-6">{item.name}</h1>
+       <p className="mb-6 text-center flex justify-center items-center text-[15px] text-[#D0D6F9]">{item.description}</p>
        </div>)
        })}
         </div>
