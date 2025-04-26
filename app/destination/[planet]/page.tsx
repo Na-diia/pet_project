@@ -13,8 +13,8 @@ export default function DestinationPage ({params}: {params: {planet: string}}) {
         bg-[url(../public/images/destination/background-destination-mobile.jpg)] 
         md:bg-[url(../public/images/destination/background-destination-tablet.jpg)]
         xl:bg-[url(../public/images/destination/background-destination-desktop.jpg)] bg-cover bg-no-repeat items-center justify-items-center min-h-screen w-full p-6">
-        <div className="mt-[88px] pt-6">
-        <p className="text-base font-bold">
+        <div className="mt-[88px] pt-6 flex justify-center items-center flex-col">
+        <p className="text-base font-bold flex justify-center items-center">
             <span className="mr-6 text-gray-400">01</span>PICK YOUR DESTINATION
         </p>
         <Planet props={result}/>

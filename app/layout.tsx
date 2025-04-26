@@ -9,12 +9,6 @@ const bellefair = Bellefair({
   subsets: ['latin']
 });
 
-const barlow = Barlow({
-  variable: "--font-barlow",
-  weight: "400",
-  subsets: ['latin']
-});
-
 export const metadata: Metadata = {
   title: "Space App",
 };
