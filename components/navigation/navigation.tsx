@@ -19,8 +19,8 @@ export function Navigation () {
                 </li>
                 <li className='text-white mr-3 md:relative md:mr-0 font-bold'>01
                     <Link href='/destination' className='ml-3 font-thin'>DESTINATION</Link>
-                    {pathname === '/destination' ?
-                    <span className='absolute right-[10px] font-bold md:left-0 md:right-auto md:top-10'>
+                    {pathname.includes('/destination') ?
+                    <span className='absolute right-[10px] font-bold md:left-1 md:right-auto md:top-10'>
                         {windowSize.width < 768 ? "|" : "________________"}
                     </span>
                     : <></>
