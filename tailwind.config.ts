@@ -8,6 +8,11 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        barlow: ['var(--font-barlow)'],
+        bellefair: ['var(--font-bellefair)'],
+        barlow_norm: ['var(--font-barlow-norm)']
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",

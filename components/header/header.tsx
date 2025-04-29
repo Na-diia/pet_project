@@ -17,12 +17,12 @@ export default function Header () {
         <MobHeader />: 
         <div className='flex justify-between items-center'>
         <Link href="/" className='xl:mt-10'>
-        <Image src={logo} alt='Logo' width={40} height={40} className='mr-10 xl:mr-16 md:w-12'/>
+        <Image src={logo} alt='Logo' width={40} height={40} className='mr-10 md:mr-0 xl:mr-16 md:w-12'/>
         </Link>
         {windowSize.width > 1279 ? 
         <hr className='absolute z-20 right-[694px] top-[87.5px] xl:w-[480px] 2xl:w-[680px] h-[1px] bg-[#979797] border-0 rounded-sm '/> 
         : <></>}
-        <div className=' md:bg-white/10 md:backdrop-blur-sm md:pt-[36px] xl:mt-10  md:pb-[36px] w-full h-full ml-10 xl:max-w-fit xl:pl-[150px] pl-[87px] pr-10  ' >
+        <div className=' md:bg-white/10 md:backdrop-blur-sm md:pt-[36px] xl:mt-10  md:pb-[36px] h-full xl:max-w-fit xl:pl-[150px] pl-[87px] pr-10  ' >
         <Navigation />
         </div>
         </div>
