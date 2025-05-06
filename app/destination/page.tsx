@@ -1,12 +1,6 @@
-import { redirect } from "next/navigation"
+import { redirect } from "next/navigation";
 
+export default function DestinationPage () {
 
-export default function DestinationRedirect () {
-
-    redirect('/destination/moon');
-    
-    return (
-        <main >
-        </main>
-    )
+    return redirect('/destination/moon');
 }
