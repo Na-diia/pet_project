@@ -28,7 +28,7 @@ export function Navigation () {
                 </li>
                 <li className='text-white mr-3 md:relative font-bold md:mr-12'>02
                     <Link href='/crew' className='tracking-[2px] ml-3 font-thin text-[#fff]/75 font-barlow'>CREW</Link>
-                    {pathname === '/crew' ?
+                    {pathname.includes('/crew') ?
                     <span className='absolute right-[10px] font-bold md:left-0 md:right-auto md:top-10'>
                         {windowSize.width < 768 ? "|" : "__________"}
                     </span>
@@ -37,7 +37,7 @@ export function Navigation () {
                 </li>
                 <li className='text-white mr-3 md:relative md:mr-0 font-bold'>03
                     <Link href='/technology' className='tracking-[2px] ml-3 font-thin text-[#fff]/75 font-barlow'>TECHNOLOGY</Link>
-                    {pathname === '/technology' ?
+                    {pathname.includes('/technology') ?
                     <span className='absolute right-[10px] font-bold md:left-0 md:right-auto md:top-10'>
                        {windowSize.width < 768 ? "|" : "__________________"}
                     </span>

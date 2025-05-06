@@ -3,5 +3,5 @@ import { redirect } from "next/navigation";
 
 export default function CrewPage () {
 
-    return redirect('crew/victor-glover');
+    return redirect('crew/commander');
 } 
