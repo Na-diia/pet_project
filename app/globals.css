@@ -19,6 +19,9 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+image {
+  height: 100%;
+}
 
 @layer utilities {
   .text-balance {
