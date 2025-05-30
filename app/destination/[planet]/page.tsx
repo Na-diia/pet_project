@@ -2,7 +2,7 @@ import data from '../../../lib/data.json';
 import Planet from '@/components/planet/planet';
 
 
-export default function DestinationPage ({params}: {params: {planet: string}}) {
+export default function PlanetPage ({params}: {params: {planet: string}}) {
 
     const planetName = params.planet;
 

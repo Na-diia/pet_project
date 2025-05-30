@@ -1,3 +1,15 @@
+export interface TecnologyProps {
+  item: {
+    id: string;
+    name: string;
+    images: {
+        portrait: string,
+        landscape: string,
+    },
+    description: string,
+  }[]
+};
+
 export interface CrewProps {
    team: {
     id: string;
