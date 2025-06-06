@@ -1,12 +1,14 @@
-import data from '../../../lib/data.json';
+'use client';
+
 import TechnologyItem from '@/components/technologyItem/technologyItem';
 
+export default function ItemPage ({params}: {params: {item: number}}) {
 
-export default function ItemPage ({params}: {params: {item: string}}) {
-
-    const itemId = params.item;
-    const technologyById = data.technology.filter((item) => item.id === itemId);
-
+    const toggleParams = (page: number) => {
+      
+        const result = params.item === page;
+        return page;
+    };
 
     return (
           <div className="bg-[url(../public/images/technology/background-technology-mobile.jpg)]
@@ -18,7 +20,7 @@ export default function ItemPage ({params}: {params: {item: string}}) {
             <span className="mr-6 text-gray-400">03</span>SPACE LAUNCH 101
         </p>
         </div> 
-        <TechnologyItem item={technologyById}/>
+        <TechnologyItem />
         </div>
     )
 
